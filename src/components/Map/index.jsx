@@ -62,27 +62,24 @@ export default function NavigationAndAddress() {
 
       {/* 내비게이션 버튼 */}
       <div className="flex flex-col gap-4 w-full px-10">
-        <h3 className="text-lg font-semibold text-gray-600 mb-2">
-          내비게이션 앱으로 길찾기
-        </h3>
         <div className="flex gap-4">
           <button
             onClick={() => (window.location.href = kakaoNaviUrl)}
-            className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600"
+            className="bg-yellow-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-pink-600 flex-1"
           >
-            카카오내비 열기
+            카카오네비
           </button>
           <button
             onClick={() => (window.location.href = naverNaviUrl)}
-            className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600"
+            className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 flex-1"
           >
-            네이버내비 열기
+            네이버네비
           </button>
           <button
             onClick={() => (window.location.href = tMapNaviUrl)}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 flex-1"
           >
-            티맵 열기
+            티맵
           </button>
         </div>
       </div>
