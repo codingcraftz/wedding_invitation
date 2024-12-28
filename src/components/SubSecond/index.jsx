@@ -1,6 +1,6 @@
 const SubSecond = () => {
   return (
-    <div className="relative flex flex-col bg-pink-100 items-center py-12 gap-16">
+    <div className="relative flex flex-col bg-pink-100 items-center py-12 gap-16 text-black font-sans">
       <section className="flex flex-col gap-4 z-10">
         <p className="font-bold text-center">신랑의 어린시절</p>
         <div className="w-[300px] h-[460px] bg-gray-400" />
