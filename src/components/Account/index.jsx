@@ -73,7 +73,7 @@ const Account = () => {
           <div>
             <p>은행: {groomAccount.bank}</p>
           </div>
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-2 justify-end">
             <button
               onClick={() => handleTossPayment(groomAccount.tossUrl)}
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
@@ -107,7 +107,7 @@ const Account = () => {
           <div>
             <p>은행: {brideAccount.bank}</p>
           </div>
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-2 justify-end">
             <button
               onClick={() => handleTossPayment(brideAccount.tossUrl)}
               className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
