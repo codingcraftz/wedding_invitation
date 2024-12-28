@@ -43,10 +43,7 @@ export default function RootLayout({ children }) {
     <html>
       <head>
         <title>손승호 ❤️ 고유미 결혼합니다.</title>
-        <meta
-          property="og:url"
-          content="https://wedding-invitation.vercel.app/"
-        />
+        <meta property="og:url" content="https://wedding-goorm.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="손승호 ❤️ 고유미 결혼합니다." />
         <meta
@@ -60,10 +57,7 @@ export default function RootLayout({ children }) {
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:domain"
-          content="wedding-invitation.vercel.app"
-        />
+        <meta property="twitter:domain" content="wedding-goorm.vercel.app" />
         <meta
           property="twitter:url"
           content="https://wedding-invitation.vercel.app/"
