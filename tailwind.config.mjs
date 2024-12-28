@@ -11,6 +11,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        cormorant: ["Cormorant", "serif"],
+        crimson: ["Crimson Pro", "serif"],
+        paris: ["Parisienne", "serif"],
+        rolland: ["rolland", "serif"],
+      },
     },
   },
   plugins: [],

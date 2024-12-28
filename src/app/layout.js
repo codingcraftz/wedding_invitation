@@ -1,5 +1,27 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Cormorant,
+  Crimson_Pro,
+  Great_Vibes,
+  Parisienne,
+} from "next/font/google";
 import "./globals.css";
+
+const paris = Parisienne({
+  subsets: ["latin"], // 사용할 언어 서브셋
+  weight: ["400"], // 사용할 폰트 두께
+});
+
+const cormorant = Cormorant({
+  subsets: ["latin"], // 사용할 언어 서브셋
+  weight: ["400", "600", "700"], // 사용할 폰트 두께
+});
+
+const crimsonPro = Crimson_Pro({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,9 +40,47 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
+      <head>
+        <title>손승호 ❤️ 고유미 결혼합니다.</title>
+        <meta
+          property="og:url"
+          content="https://wedding-invitation.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="손승호 ❤️ 고유미 결혼합니다." />
+        <meta
+          property="og:description"
+          content="2025년 5월 31일, 두 사람이 하나가 되는 특별한 날에 초대합니다."
+        />
+        <meta
+          property="og:image"
+          content="https://opengraph.b-cdn.net/production/images/33fc6cd8-29d9-4e91-887a-270c533792aa.jpg?token=oSZxZFZcZU8dhsdFrRLJ5_25IiQ84NuqtEZtDyDdRac&height=1440&width=961&expires=33271380406"
+        />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="wedding-invitation.vercel.app"
+        />
+        <meta
+          property="twitter:url"
+          content="https://wedding-invitation.vercel.app/"
+        />
+        <meta name="twitter:title" content="손승호 ❤️ 고유미 결혼합니다." />
+        <meta
+          name="twitter:description"
+          content="2025년 5월 31일, 두 사람이 하나가 되는 특별한 날에 초대합니다."
+        />
+        <meta
+          name="twitter:image"
+          content="https://opengraph.b-cdn.net/production/images/33fc6cd8-29d9-4e91-887a-270c533792aa.jpg?token=oSZxZFZcZU8dhsdFrRLJ5_25IiQ84NuqtEZtDyDdRac&height=1440&width=961&expires=33271380406"
+        />
+      </head>
+
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${crimsonPro.variable} ${cormorant.variable} ${paris.variable} antialiased`}
       >
         {children}
       </body>
