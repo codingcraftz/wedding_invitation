@@ -57,7 +57,7 @@ export default function Home() {
           <div className="fixed bottom-4 right-4 flex items-center justify-center z-50">
             <button
               onClick={handleAudioToggle}
-              className="bg-black text-white font-bold px-5 py-3 rounded-full shadow-lg transition font-sans text-lg border-2 border-gray-300"
+              className="bg-black text-white font-bold px-4 py-2 rounded-full shadow-lg transition font-sans text-sm border-1 border-gray-300"
             >
               {isPlaying ? (
                 <div className="flex items-center gap-2">

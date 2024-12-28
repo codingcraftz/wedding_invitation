@@ -57,7 +57,7 @@ export default function NavigationAndAddress() {
       {/* 주소 표시 */}
       <div className="flex flex-col gap-2 py-4 font-sans items-start w-full px-10">
         <p className="text-gray-700">{HALL_ADDRESS}</p>
-        <p className="font-bold">{HALL_NAME}</p>
+        <p className="font-bold text-black">{HALL_NAME}</p>
       </div>
 
       {/* 내비게이션 버튼 */}

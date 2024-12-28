@@ -61,7 +61,7 @@ const Account = () => {
             {groomAccount.name}
           </h2>
           <div className="border-b border-gray-300 w-full"></div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center text-black font-sans">
             <p>계좌번호: {groomAccount.accountNumber}</p>
             <button
               onClick={() => copyToClipboard(groomAccount.accountNumber)}
@@ -70,7 +70,7 @@ const Account = () => {
               복사
             </button>
           </div>
-          <div>
+          <div className="font-sans text-black">
             <p>은행: {groomAccount.bank}</p>
           </div>
           <div className="flex gap-4 mt-2 justify-end">
@@ -95,7 +95,7 @@ const Account = () => {
             {brideAccount.name}
           </h2>
           <div className="border-b border-gray-300 w-full"></div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center font-sans text-black">
             <p>계좌번호: {brideAccount.accountNumber}</p>
             <button
               onClick={() => copyToClipboard(brideAccount.accountNumber)}
@@ -104,7 +104,7 @@ const Account = () => {
               복사
             </button>
           </div>
-          <div>
+          <div className="text-black font-sans">
             <p>은행: {brideAccount.bank}</p>
           </div>
           <div className="flex gap-4 mt-2 justify-end">
